@@ -3,3 +3,6 @@ nav{
     gap: 1rem;
     justify-content: flex-end;
 }
+nav.dashB{
+    justify-content: flex-start;
+}
