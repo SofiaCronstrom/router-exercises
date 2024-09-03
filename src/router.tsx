@@ -3,6 +3,8 @@ import App from "./App";
 import { Home, About, Contact, Dashboard, NotFound } from "./pages";
 import { Settings } from "./components/Settings";
 import { Stats } from "./components/Stats";
+import { LoggedIn } from "./components/LoggedIn";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 
 export const router = createBrowserRouter([
   {
