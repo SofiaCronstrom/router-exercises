@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import { Home, About, Contact, Dashboard, NotFound } from "./pages";
+import { Home, About, Contact, Dashboard, NotFound, MyAccount} from "./pages";
 import { Settings } from "./components/Settings";
 import { Stats } from "./components/Stats";
-import { LoggedIn } from "./components/LoggedIn";
-import { ProtectedRoute } from "./components/ProtectedRoute";
+import Protected from "./components/protected";
+
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +36,10 @@ export const router = createBrowserRouter([
              path: "stats",
              element: <Stats />
            },
+           {
+            path: "protected",
+            element: <Protected children={<MyAccount />}/>
+           }
         ],
       },
     ],
